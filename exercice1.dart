@@ -20,6 +20,8 @@ class Couleur {
         g = 0,
         b = 255;
 }
-
+void afficherCouleur() {
+  print("(R : $r, V : $g, B : $b)");
+}
 void main() {
 }
