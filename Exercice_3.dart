@@ -15,4 +15,9 @@ void depot(double montant) {
 }
 
 void main() {
+  var compte = Compte("C001");
+
+  compte.depot(150.0);
+
+  print("Solde : ${compte.solde}");
 }
