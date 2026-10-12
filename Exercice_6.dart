@@ -26,4 +26,16 @@ class BaseDeDonnees implements Connectable {
   }
 }
 void main() {
+  var serveur = ServeurAPI();
+  var base = BaseDeDonnees();
+
+  List<Connectable> services = [
+    serveur,
+    base,
+  ];
+
+  for (var service in services) {
+    service.connecter("Nassim");
+    service.deconnecter();
+  }
 }
